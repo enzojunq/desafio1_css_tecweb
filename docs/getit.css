@@ -32,7 +32,7 @@ body {
 .btn {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 0.5rem;
 
   overflow: hidden;
 
@@ -44,6 +44,13 @@ body {
   background-color: #f7d736;
 
   transition: background-color 0.3s;
+
+  font-family: 'Roboto', sans-serif;
+
+  width: 100%;
+
+
+  border-radius: 0.3rem;
 }
 
 .btn > * {
@@ -85,15 +92,31 @@ body {
 
 
 .appbar {
+  display: flex;
   background-color: #f7d736;
   color: #f7d736;
   padding: 10px;
-  text-align: center;
+  text-align: start;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.subtitle {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  align-items: center;
+  color: #000000;
+  /* tamanho do texto */
+  /* tipo da fonte roboto */
+  font: 1.2rem 'Roboto', sans-serif;
+  
+  
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 6rem;
+  height: auto;
 }
 
 .container {
@@ -106,14 +129,36 @@ body {
 .form-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-around;
+  align-items: start;
   margin: 2rem;
-  height: 10rem;
-  width: 100vh;
-  border-radius: 0.8rem;
-  box-shadow: inset 0 0 10px #000000;
+  height: 8rem;
+  width: 35rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
+.form-card-title {
+  font-size: 1.5rem;
+  display: block;
+  font-weight: bold;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.autoresize {
+  display: block;
+  width: 100%;
+  position: relative;
+  font-size: 1rem;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
 
 .card-container {
   display: flex;
